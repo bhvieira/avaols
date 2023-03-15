@@ -40,9 +40,8 @@ setMethod("fit", signature(object = "avaols"), function(object, intercept = TRUE
     return(object)
 })
 
-# setGeneric("predict", function(object, newdata, ...) standardGeneric("predict"))
-
 # method for predicting simultaneous regression
+#' @export
 setMethod("predict", signature(object = "avaols"), function(object, newdata, ...) {
     "Method for predicting simultaneous regression"
     # if newdata is null, use the original data
@@ -58,6 +57,7 @@ setMethod("predict", signature(object = "avaols"), function(object, newdata, ...
     return(t(t(newdata %*% B) + c(B0)))
 })
 
+#' @export
 setMethod("coef", signature(object = "avaols"), function(object) {
     "Method for returning the coefficients of simultaneous regression"
     B <- object@B
