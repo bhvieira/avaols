@@ -1,0 +1,18 @@
+Package: avaols
+Title: All-vs-All Ordinary Least Squares (AVAOLS) Regression
+Version: 0.0.0.9000
+Authors@R: 
+    person("Bruno", "Hebling Vieira", , "bruno.hebling.vieira@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8770-7396"))
+Description: This package implements the All-vs-All Ordinary Least Squares (AVAOLS) method for 
+    estimating the parameters of linear models that relate a set of variables to itself.
+    The method is based on the idea of, instead of fitting a single model for each variable,
+    fitting a single model for all variables at once. This is done by using the
+    QR decomposition of the covariance matrix of the variables.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
