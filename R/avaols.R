@@ -42,7 +42,7 @@ setMethod("fit", signature(object = "avaols"), function(object, intercept = TRUE
 
 # method for predicting simultaneous regression
 #' @export
-setMethod("predict", signature(object = "avaols"), function(object, newdata, ...) {
+setMethod("predict", signature(object = "avaols"), function(object, newdata=NULL, ...) {
     "Method for predicting simultaneous regression"
     # if newdata is null, use the original data
     if (is.null(newdata)) {

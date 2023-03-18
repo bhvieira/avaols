@@ -32,10 +32,25 @@ test_that("predict returns the correct output", {
   expect_equal(dim(pred), dim(Y))
 })
 
+# Test that predict works with a null newdata
+test_that("predict works with a null newdata", {
+  X <- data.frame(x1 = 1:10/10, x2 = (11:20)^2/400)
+  obj <- avaols(X)
+  pred <- predict(obj)
+  expect_equal(dim(pred), dim(X))
+})
+
 # Test that coef returns the correct output
 test_that("coef returns the correct output", {
   X <- data.frame(x1 = 1:10/10, x2 = (11:20)^2/400)
   obj <- avaols(X)
   coefs <- coef(obj)
   expect_equal(dim(coefs), c(ncol(X) + 1, ncol(X)))
+})
+
+# Test that the show method works
+test_that("show method works", {
+  X <- data.frame(x1 = 1:10/10, x2 = (11:20)^2/400)
+  obj <- avaols(X)
+  expect_output(show(obj))
 })
