@@ -3,6 +3,9 @@
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/bhvieira/avaols/branch/main/graph/badge.svg)](https://app.codecov.io/gh/bhvieira/avaols?branch=main)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![check-standard](https://github.com/bhvieira/avaols/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/bhvieira/avaols/actions/workflows/check-standard.yaml)
+[![test-coverage](https://github.com/bhvieira/avaols/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/bhvieira/avaols/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
 `avaols` provides a simple interface to efficiently estimate ordinary least squares models relating each column of a data frame to all the others.
