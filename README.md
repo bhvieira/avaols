@@ -2,6 +2,7 @@
 # avaols
 
 <!-- badges: start -->
+[![Codecov test coverage](https://codecov.io/gh/bhvieira/avaols/branch/main/graph/badge.svg)](https://app.codecov.io/gh/bhvieira/avaols?branch=main)
 <!-- badges: end -->
 
 `avaols` provides a simple interface to efficiently estimate ordinary least squares models relating each column of a data frame to all the others.
