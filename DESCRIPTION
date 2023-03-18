@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Bruno", "Hebling Vieira", , "bruno.hebling.vieira@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8770-7396"))
-Description: This package implements the All-vs-All Ordinary Least Squares (AVAOLS) method for 
+Description: An All-vs-All Ordinary Least Squares (AVAOLS) method for 
     estimating the parameters of linear models that relate a set of variables to itself.
     The method is based on the idea of, instead of fitting a single model for each variable,
     fitting a single model for all variables at once. This is done by using the
