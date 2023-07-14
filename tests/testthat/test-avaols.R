@@ -1,5 +1,3 @@
-context("avaols")
-
 # Test that avaols returns an avaols object
 test_that("avaols returns an avaols object", {
   X <- data.frame(x1 = 1:10/10, x2 = (11:20)^2/400)
